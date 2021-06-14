@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56971" started-at="2021-06-14T09:21:11 IST" finished-at="2021-06-14T09:22:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56971" started-at="2021-06-14T09:21:11 IST" finished-at="2021-06-14T09:22:08 IST">
+      <class name="testNG_Programs.DataDrivenTesting">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testNG_Programs.DataDrivenTesting@5d76b067]" name="beforeTest" is-config="true" duration-ms="2677" started-at="2021-06-14T09:21:11 IST" finished-at="2021-06-14T09:21:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="DataDrivenTestingExample()[pri:0, instance:testNG_Programs.DataDrivenTesting@5d76b067]" name="DataDrivenTestingExample" duration-ms="53332" started-at="2021-06-14T09:21:14 IST" finished-at="2021-06-14T09:22:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataDrivenTestingExample -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testNG_Programs.DataDrivenTesting@5d76b067]" name="afterTest" is-config="true" duration-ms="913" started-at="2021-06-14T09:22:07 IST" finished-at="2021-06-14T09:22:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testNG_Programs.DataDrivenTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

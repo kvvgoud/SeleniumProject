@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite  name="Default suite" >
+  
+  <test  name="Default test" thread-count="3" parallel="classes">
+    <classes>
+      <class name="testNG_Programs.FirstTestNGProg"/>
+      <class name="testNG_Programs.DataProviderTest"/>
+      <class name="testNG_Programs.DataDrivenTesting"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+</suite>

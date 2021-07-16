@@ -1,15 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossbrowserTesting suite]" parallel="tests">
+  <test thread-count="5" name="Edge test(failed)" parallel="tests">
+    <parameter name="browser" value="Edge"/>
     <classes>
-      <class name="testNG_Programs.SampleTest">
+      <class name="testNG_Parallel.FirstTestNGProg">
         <methods>
-          <include name="test_PF"/>
-          <include name="beforeTest"/>
+          <include name="Linkedin_test"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- testNG_Programs.SampleTest -->
+      </class> <!-- testNG_Parallel.FirstTestNGProg -->
+      <class name="testNG_Parallel.DataDrivenTesting">
+        <methods>
+          <include name="DataDrivenTestingExample"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testNG_Parallel.DataDrivenTesting -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Edge test(failed) -->
+  <test thread-count="5" name="Chrome test(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNG_Parallel.DataProviderTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="Dataprovider_Test" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- testNG_Parallel.DataProviderTest -->
+      <class name="testNG_Parallel.FirstTestNGProg">
+        <methods>
+          <include name="Linkedin_test"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testNG_Parallel.FirstTestNGProg -->
+    </classes>
+  </test> <!-- Chrome test(failed) -->
+  <test thread-count="5" name="Firefox test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testNG_Parallel.DataProviderTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="Dataprovider_Test" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- testNG_Parallel.DataProviderTest -->
+      <class name="testNG_Parallel.FirstTestNGProg">
+        <methods>
+          <include name="Linkedin_test"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testNG_Parallel.FirstTestNGProg -->
+    </classes>
+  </test> <!-- Firefox test(failed) -->
+</suite> <!-- Failed suite [CrossbrowserTesting suite] -->

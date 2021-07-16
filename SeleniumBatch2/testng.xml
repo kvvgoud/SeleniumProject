@@ -3,7 +3,7 @@
 
 <suite  name="Default suite" >
   
-  <test  name="Default test" thread-count="3" parallel="classes">
+  <test  name="Default test">
     <classes>
       <class name="testNG_Programs.FirstTestNGProg"/>
       <class name="testNG_Programs.DataProviderTest"/>

@@ -9,7 +9,7 @@ import org.testng.annotations.*;
 
 public class BaseParallel {
 	
-	WebDriver driver; 
+	public static WebDriver driver; 
 	
 	String LinkedIn_URL = "https://www.linkedin.com/home";
 	String Facebook_URL = "https://www.facebook.com/";

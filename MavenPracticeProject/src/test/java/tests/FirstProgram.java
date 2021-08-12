@@ -24,13 +24,13 @@ public class FirstProgram {
 	@BeforeClass
 	public void beforeClass() {
 
-//		  WebDriverManager.chromedriver().setup();
-//		  driver = new ChromeDriver();
+		  WebDriverManager.chromedriver().setup();
+		  driver = new ChromeDriver();
 //		  WebDriverManager.firefoxdriver().setup();
 //		  driver = new FirefoxDriver();
 
-		WebDriverManager.operadriver().setup();
-		driver = new OperaDriver();
+//		WebDriverManager.operadriver().setup();
+//		driver = new OperaDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
